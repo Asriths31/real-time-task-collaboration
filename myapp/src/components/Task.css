@@ -1,0 +1,85 @@
+.task {
+  background: white;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.task:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.task.dragging {
+  opacity: 0.6;
+  transform: rotate(3deg);
+}
+
+.task-view h4 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.task-view p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.task-view .actions {
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.task:hover .task-view .actions {
+  opacity: 1;
+}
+
+.task .actions button {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.task .actions button:hover {
+  background-color: #e0e0e0;
+}
+
+.task-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-edit input,
+.task-edit textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.task-edit input:focus,
+.task-edit textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.task-edit .actions button {
+  background-color: #667eea;
+  color: white;
+}
+
+.task-edit .actions button:last-child {
+  background-color: #f0f0f0;
+  color: #333;
+}

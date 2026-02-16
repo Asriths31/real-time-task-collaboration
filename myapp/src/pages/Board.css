@@ -1,0 +1,51 @@
+.board-page {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  width: 100vw;
+  color: black;
+}
+
+.board-page header {
+  background: white;
+  padding: 24px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.board-page header button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.board-page header button:hover {
+  text-decoration: underline;
+}
+
+.board-page header h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.board-content {
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #666;
+}

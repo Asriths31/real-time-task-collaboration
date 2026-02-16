@@ -1,0 +1,112 @@
+.list {
+  background: #ebecf0;
+  border-radius: 8px;
+  width: 280px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 250px);
+}
+
+.list-header {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-header h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+.list-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.list-header button:hover {
+  color: #333;
+}
+
+.list-content {
+  padding: 8px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 100px;
+}
+
+.list-content.dragging-over {
+  background-color: #d9dce2;
+}
+
+.list-footer {
+  padding: 8px;
+  border-top: 1px solid #ddd;
+}
+
+.list-footer button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #666;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.list-footer button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.list-footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-footer input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.list-footer .actions {
+  display: flex;
+  gap: 8px;
+}
+
+.list-footer .actions button {
+  flex: 1;
+  background-color: #667eea;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.list-footer .actions button[type="button"] {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.list.add-list {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.list.add-list button {
+  background: white;
+  border: 2px dashed #ddd;
+  padding: 12px;
+  text-align: center;
+  border-color: #667eea;
+  color: #667eea;
+}
+
