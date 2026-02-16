@@ -14,3 +14,40 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+```bash
+# Clone
+git clone <repo-url>
+cd project-name
+
+# Backend
+cd backend
+cp .env.example .env
+npm install
+npm run dev  # http://localhost:5000
+
+# Frontend (new terminal)
+cd ../frontend
+cp .env.example .env
+npm install
+npm run dev  # http://localhost:5173
+
+```
+
+## Api Endpoints
+| Endpoint           | Method | Description   | Auth |
+| ------------------ | ------ | ------------- | ---- |
+| /api/auth/register | POST   | Register user | No   |
+| /api/auth/login    | POST   | Login (JWT)   | No   |
+| /api/users         | GET    | Get users     | Yes  |
+| /api/posts         | POST   | Create post   | Yes  |
+| /api/upload        | POST   | Image upload  | Yes  |
+
+## Demo Credentials
+
+```bash
+Email: demo@project.com
+Password: demo123
+```
